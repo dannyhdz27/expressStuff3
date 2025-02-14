@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("here are the cats! which cat would you like?");
+  res.render("cats");
 });
 
 router.get("/tabby", (req, res) => {
@@ -10,7 +10,7 @@ router.get("/tabby", (req, res) => {
 });
 
 router.get("/tuxedo", (req, res) => {
-  res.send("take the tuxedo cat!");
+  res.render("tuxedoCat");
 });
 
 module.exports = router;
